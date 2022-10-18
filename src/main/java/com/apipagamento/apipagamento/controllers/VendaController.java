@@ -34,7 +34,7 @@ public class VendaController {
 
     @PostMapping(value = "/venda")
     VendaDTO registrarVenda(@RequestBody VendaDTO vendaDTO) {
-        vendaDTOList.add(vendaDTO);
+        vendaDTOList = vendaService.adicionarVenda(vendaDTOList, vendaDTO);
         return vendaDTO;
     }
 

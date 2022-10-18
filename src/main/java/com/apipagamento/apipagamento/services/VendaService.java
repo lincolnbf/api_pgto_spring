@@ -43,4 +43,9 @@ public class VendaService {
 
         return vendaDTOList;
     }
+
+    public List<VendaDTO> adicionarVenda(List<VendaDTO> vendaDTOList, VendaDTO vendaDTO) {
+        vendaDTOList.add(vendaDTO);
+        return vendaDTOList;
+    }
 }
